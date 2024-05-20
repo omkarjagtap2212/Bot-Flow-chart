@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chatbot {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    border: 1px solid black;
+}
+
+.inputText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.inputText > button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3f51b5;
+    color: white;
+    
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.inputText > button:hover {
+    background-color: #e3a07e;
+}
+
+.inputText > input {
+    margin: 0 10px;
+    padding: 10px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .chatbot {
+        flex-direction: column;
+    }
+
+    .inputText {
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+
+    .inputText > button {
+        margin: 5px 0;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .inputText > input {
+        margin: 5px 0;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inputText > button {
+        margin: 3px 0;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .inputText > input {
+        margin: 3px 0;
+        padding: 6px;
+        font-size: 12px;
+    }
+}
