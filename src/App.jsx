@@ -55,7 +55,7 @@ export default function App() {
     const newNode = {
       id: `node-${nodes.length + 1}`,
       type: 'default',
-      data: { label: inputText },
+      data: { label: `${inputText}${nodes.length + 1}` },
       position: { x: 50, y: 50 + nodes.length * 100 },
     };
 
