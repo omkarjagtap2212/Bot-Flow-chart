@@ -1,3 +1,14 @@
+project hoisted link :- https://chat-flow-chart.vercel.app/
+
+for start project locally
+
+1. git clone  git@github.com:omkarjagtap2212/Bot-Flow-chart.git
+2. cd  Bot-Flow-chart
+3. npm install
+4. yarn dev
+
+
+
 # Overview:
 
 We’ll build a simple Chatbot flow builder using React and try to make the code extensible to easily add new features. 
